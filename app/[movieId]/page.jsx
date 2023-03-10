@@ -49,7 +49,7 @@ async function MovieDetail({ params }) {
 
         <p className="mt-3">
           <span className="font-bold">Movie&apos;s Country : </span>
-          {res.production_countries[0].name}
+          {res.production_countries[0]?.name}
         </p>
       </div>
     </div>
