@@ -16,7 +16,7 @@ async function MovieDetail({ params }) {
   const imagePath = "https://image.tmdb.org/t/p/original"
   const data = await fetch(
     `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.API_KEY}`,
-    { next: { revalidate: 120 } }
+    { next: { revalidate: 60 } }
   )
   const res = await data.json()
   return (
