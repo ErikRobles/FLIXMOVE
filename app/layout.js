@@ -23,9 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} font-montserrat `}>
+      <body className={`${montserrat.variable} font-montserrat bg-[#28282B]`}>
         <Navbar />
-        <main className="mx-32 my-12 mt-[90px]">{children}</main>
+        <main className="mx-32 my-12 mt-[90px] text-white">{children}</main>
       </body>
     </html>
   )
