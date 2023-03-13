@@ -14,6 +14,7 @@ function Movie({ title, id, release_date, poster_path }) {
           alt={title}
           width={800}
           height={800}
+          className="rounded-md hover:scale-105 transition duration-300 ease-in-out hover:translate-y-3"
         />
       </Link>
     </div>
