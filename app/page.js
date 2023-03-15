@@ -21,7 +21,7 @@ export default async function Home() {
   const res = await data.json()
   return (
     <main>
-      <section className="grid gap-16 grid-cols-fluid">
+      <section className="grid lg:gap-16 gap-5 grid-cols-fluid">
         {res.results.map((movie) => (
           <Movie
             key={movie.id}

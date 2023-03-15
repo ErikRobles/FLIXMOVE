@@ -31,8 +31,8 @@ async function MovieDetail({ params }) {
         <Image
           src={imagePath + res.backdrop_path}
           className="my-12 w-full rounded-md shadow-md"
-          width={1000}
-          height={1000}
+          width={800}
+          height={800}
           priority
           alt={res.title}
         ></Image>

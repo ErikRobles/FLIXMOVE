@@ -24,10 +24,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} relative font-montserrat bg-[#28282B] position-relative `}
+        className={`${montserrat.variable} relative font-montserrat bg-[#28282B]`}
       >
         <Navbar />
-        <main className="mx-32 my-12 mt-[90px] text-white">{children}</main>
+        <main className="md:mx-32 mx-3 my-12 mt-[90px] text-white">
+          {children}
+        </main>
       </body>
     </html>
   )
